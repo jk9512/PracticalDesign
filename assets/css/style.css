@@ -55,6 +55,7 @@ body {
   border: 2px solid rgb(205, 205, 205);
   margin-bottom: 10px;
   color: #6e6e6e;
+  cursor: pointer;
 }
 .step2-options {
   display: grid;
