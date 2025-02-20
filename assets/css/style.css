@@ -1,0 +1,81 @@
+.progress-container {
+  width: 100%;
+  background: #ddd;
+  height: 5px;
+  margin-bottom: 20px;
+  position: relative;
+  border-radius: 5px;
+}
+body {
+  background-color: #fbddff !important;
+}
+.progressBarWrapper {
+  background-color: #fff;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background: #639 !important;
+  transition: width 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.form-step {
+  display: none;
+}
+
+.form-step.active {
+  display: block;
+}
+
+.btn-container {
+  margin-top: 20px;
+}
+
+#nextBtn,
+#prevBtn {
+  padding: 8px 16px;
+  background: #639 !important;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+.select-options,
+.select-options-step2 {
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid rgb(205, 205, 205);
+  margin-bottom: 10px;
+  color: #6e6e6e;
+}
+.step2-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.select-options.activeOption,
+.select-options-step2.activeOption {
+  background-color: rgba(102, 51, 153, 0.2);
+  border-color: #639;
+  color: black;
+}
+.main-sec {
+  min-height: 100vh !important;
+}
+#multiStepForm {
+  min-height: 70vh !important;
+}
+
+@media (max-width: 575px) {
+  .step2-options {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
